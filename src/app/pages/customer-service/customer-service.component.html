@@ -1,0 +1,50 @@
+<h1 style="width: 600px; font-size:25px; margin-top:-15px;">Customer Service</h1>
+
+<h2 style="width: 600px; font-size:medium;margin-left:30px;">Customer Booking Form</h2>
+<div class="fom">
+<form [formGroup]="bookingForm" (ngSubmit)="submitForm()">
+  <div class="form-group frm">
+    <label for="customerName">Customer Name</label>
+    <input type="text" id="customerName" formControlName="customerName" class="form-control">
+    <div *ngIf="bookingForm.get('customerName')?.invalid && (bookingForm.get('customerName')?.dirty || bookingForm.get('customerName')?.touched)" class="text-danger">
+      Customer Name is required.
+    </div>
+  </div>
+
+  <div class="form-group frm">
+    <label for="checkInDate">Check-in Date</label>
+    <input type="date" id="checkInDate" formControlName="checkInDate" class="form-control">
+    <div *ngIf="bookingForm.get('checkInDate')?.invalid && (bookingForm.get('checkInDate')?.dirty || bookingForm.get('checkInDate')?.touched)" class="text-danger">
+      Check-in Date is required.
+    </div>
+  </div>
+
+  <div class="form-group frm">
+    <label for="checkOutDate">Check-out Date</label>
+    <input type="date" id="checkOutDate" formControlName="checkOutDate" class="form-control">
+    <div *ngIf="bookingForm.get('checkOutDate')?.invalid && (bookingForm.get('checkOutDate')?.dirty || bookingForm.get('checkOutDate')?.touched)" class="text-danger">
+      Check-out Date is required.
+    </div>
+  </div>
+
+  <div class="form-group frm">
+    <label for="email">Email</label>
+    <input type="email" id="email" formControlName="email" class="form-control">
+    <div *ngIf="bookingForm.get('email')?.invalid && (bookingForm.get('email')?.dirty || bookingForm.get('email')?.touched)" class="text-danger">
+      Invalid Email.
+    </div>
+  </div>
+
+  <div class="form-group frm">
+    <label for="mobileNumber">Mobile Number</label>
+    <input type="tel" id="mobileNumber" formControlName="mobileNumber" class="form-control">
+    <div *ngIf="bookingForm.get('mobileNumber')?.invalid && (bookingForm.get('mobileNumber')?.dirty || bookingForm.get('mobileNumber')?.touched)" class="text-danger">
+      Invalid Mobile Number.
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="bookingForm.invalid" class="btn btn-primary">Book Now</button>
+</form>
+
+</div>
+<app-user></app-user>

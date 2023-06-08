@@ -1,0 +1,123 @@
+
+/* topnav css*/
+.topnav{
+    width:100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #eef4f5;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+.topnav .mail{
+    margin-top: 15px;
+    padding-left: 850px;
+    line-height: 1;
+   
+}
+
+.topnav a{
+    margin-top: -8px;
+    float: left;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bolder;
+    padding: 14px 16px;
+}
+.menu{
+    float: right;
+    margin-right: 50px;
+    margin-top:10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #000;
+    display: none;
+}
+
+/* leftside bar*/
+
+.sidebar{
+    position: fixed;
+    top: 63px;
+    overflow: auto;
+    background-color:#eef4f5;
+    height: 100%;
+    border-right:1px solid rgb(128, 128,128);
+    padding: 20px 15px;
+    margin-top:-13px;
+    width: 220px;
+}
+
+.sidebar .imge{
+    margin-top: -40px;
+    margin-left: 25px;
+   transform: translate(50 ,50);
+}
+
+.sidebar a{
+    text-decoration: none;
+    padding: 19px 20px ;
+    color: #000;
+    text-align: left;
+    display: block;
+}
+
+.sidebar i{
+    padding-right:10px;
+}
+
+.sidebar .icon{
+    float: right;
+    
+}
+.dropdow-container{
+    padding-left: 10px;
+    overflow-y: hidden;
+    max-height: 0px;
+    transition: all .15s ease;
+}
+
+.dropdow-container.show{
+    max-height: 1000px;
+    transition: all .15s ease;
+}
+
+ul{
+    padding: 10px;
+}
+
+
+ul>li>a.active{
+    color: #000;
+}
+
+/*main content*/
+
+.main-content{
+    margin-left:230px;
+    margin-top:100px;
+    padding:10px 18px;
+    transition: margin-left .5s;
+
+}
+
+
+
+@media screen and (max-width:500px) {
+    .menu{
+        display:block ;
+    }
+    .sidebar{
+        display: none;
+        width:150px;
+    }
+    .sidebar a{
+        padding:10px 0px;
+    }
+    .main-content{
+        margin-left: 0px;
+    }
+
+}

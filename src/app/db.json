@@ -1,0 +1,32 @@
+{
+    "Users":[
+        {
+            "id":1,
+            "name":"Ragul",
+            "dateofBirth":"12/03/1994",
+            "email":"ragul123@gmail.com",
+            "mobileNumber":"9129302932"
+        },
+        {
+            "id":2,
+            "name":"Riya",
+            "dateofBirth":"24/01/2000",
+            "email":"riya23sri@gmail.com",
+            "mobileNumber":"807978806"
+        },
+        {
+            "id":3,
+            "name":"Kumar",
+            "dateofBirth":"01/06/1997",
+            "email":"kumar54@gmail.com",
+            "mobileNumber":"797981287"
+        },
+        {
+            "id":4,
+            "name":"Vikram",
+            "dateofBirth":"13/08/1990",
+            "email":"vikram23vk@gmail.com",
+            "mobileNumber":"6127972307"
+        }
+    ]
+}
